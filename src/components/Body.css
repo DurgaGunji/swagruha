@@ -1,0 +1,351 @@
+/* Container for the entire body */
+.box{
+  background-image: url('../assets/Isolation_Mode.png');
+}
+  .right-image {
+    width: auto;
+    height: 100%;
+    position: relative;
+    left: 1%;
+    /* transform: translateX(100px); */
+   
+  }
+  .box-on-flower {
+    width:auto !important;
+    /* height: auto; */
+    background-position: cover !important;
+    /* background-color: white; */
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px !important;
+  }
+  
+    .box-image {
+     width: 300px; 
+     position: relative;
+     right:30%;
+     /* width:300px !important; */
+    background-color: white;
+    background: none; 
+}
+
+.body-container {
+  background-color: #a10007;
+  position: relative;
+   background-image: url('../assets/flower.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  width: 100%;
+}
+
+/* Top design */
+.top-design {
+  position: absolute;
+  background-image: url('../assets/design.png');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50px;
+  margin-top: -10px;
+}
+
+/* Image Section */
+.image-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Left Content Container */
+.content-container {
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+  position: static;
+  left: 80px;
+}
+
+/* Anniversary Text Styles */
+.anniversary-text {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+  color: #e6a340;
+  text-align: justify;
+  font-family: Georgia, serif;
+}
+
+.year-text {
+  font-size: 56px;
+  font-weight: bold;
+  color: #e6a340;
+  font-family: Georgia, serif;
+}
+
+.celebration-text {
+  font-size: 38px;
+  font-weight: bold;
+  color: #e6a340;
+  font-family: Georgia, serif;
+}
+
+.superscript {
+  font-size: 24px;
+  vertical-align: top;
+}
+
+/* Description Text */
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+  color: #fff5ee;
+  text-align: justify;
+}
+
+
+
+.box-on-flower {
+  position: absolute; /* Position the box relative to the parent */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust to perfectly center */
+}
+
+.box-image {
+  width: 100px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+
+/* Media Queries */
+
+/* Mobile Devices (max-width 480px) */
+@media (max-width: 480px) {
+  .top-design {
+    background-image: none !important;
+  }
+  .body-container {
+    background-image: none !important;
+  }
+  .image-flower {
+    display: none !important;
+  }
+  .content-container {
+    display: block !important;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+/* Tablets (max-width 768px) */
+@media (max-width: 768px) {
+  .top-design {
+    background-image: none !important;
+  }
+  .body-container {
+    background-image: none !important;
+  }
+  .image-flower {
+    display: none !important;
+  }
+  .content-container {
+    display: block !important;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+/* Small Laptops (min-width: 768px and max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .top-design {
+    background-image: none !important;
+  }
+  .body-container {
+    background-image: none !important;
+  }
+  .image-flower{
+    display:none;
+  }
+  /* .image-flower {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-left: 30px;
+  }
+  
+  .right-image {
+    width: auto;
+    height: 100%;
+    position: relative;
+    right: 0%;
+    /* transform: translateX(100px); */
+  }
+  
+  /* .box-on-flower {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%); */
+  
+  .content-container {
+    padding: 40px;
+    font-size: 18px;
+  }
+
+
+/* Laptops (min-width: 1024px and max-width: 1366px) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .top-design {
+    display: block;
+  }
+  .body-container {
+    display: block;
+  }
+  .image-flower {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-left: 30px;
+  }
+  
+  .right-image {
+    width: auto;
+    height: 100%;
+    position: relative;
+    left: 0%;
+    /* transform: translateX(100px); */
+  }
+  
+  .box-on-flower {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  }
+  .content-container {
+    padding: 50px;
+    font-size: 20px;
+  }
+}
+
+/* Large Laptops / Desktops (min-width: 1366px and max-width: 1920px) */
+@media (min-width: 1366px) and (max-width: 1920px) {
+  .top-design {
+    display: block;
+  }
+  .body-container {
+    display: block;
+  }
+  .image-flower {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-left: 30px;
+  }
+  
+  .right-image {
+    width: auto;
+    height: 100%;
+    position: relative;
+    left: 0%;
+    /* transform: translateX(100px); */
+  }
+  
+  .box-on-flower {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  }
+  .content-container {
+    padding: 60px;
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1920px) and (max-width: 3840px) {
+  .top-design {
+    display: none;
+  }
+
+  .image-flower {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-left: 260px;
+  }
+
+  .right-image {
+    width: auto;
+    height: 100%;
+    position: relative;
+    left: 0%;
+  }
+
+  .box-on-flower {
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .content-container {
+    padding: 80px;
+    font-size: 24px;
+  }
+}
+
+
+/* Extra Large Screens (min-width: 3840px for 4K and beyond) */
+/* @media (min-width: 3840px) {
+  .top-design {
+    background-image: none !important;
+  }
+  .body-container {
+    display: block;
+  }
+  .image-flower {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-left: 30px;
+  }
+  
+  .right-image {
+    width: auto;
+    height: 100%;
+    position: relative;
+    left: 0%;
+    /* transform: translateX(100px); */
+  /* }
+  
+  .box-on-flower {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+   
+    transform: translate(-50%, -50%);
+  }
+  .content-container {
+    padding: 100px;
+    font-size: 26px;
+  }
+} */ 

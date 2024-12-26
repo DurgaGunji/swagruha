@@ -1,0 +1,243 @@
+/* Base Styles */
+.container_r {
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  background-color: #fdf4e9;
+}
+
+.title_r {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 20px;
+  display: block;
+  text-align: left;
+}
+
+.arrowButtons {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+  margin-right: 50px;
+  border-radius: 30px;
+}
+
+.leftArrow, .rightArrow {
+  background-color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.leftArrow {
+  background-color: white;
+  border: 2px solid #a10007;
+  color: #a10007;
+}
+
+.rightArrow {
+  background-color: #a10007;
+  color: black;
+  border: none;
+}
+
+.productsGrid_r {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr); /* Default: 4 columns */
+}
+
+.card_r {
+  background-color: #fdf4e9;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.favoriteIconContainer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.favoriteIcon {
+  font-size: 24px;
+  color: #777;
+}
+
+.badge_r {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: goldenrod;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.categoryText {
+  font-size: 14px;
+  color: #777;
+  text-align: left;
+}
+
+.productName {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #8b0000;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.ratingContainer_r {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.greenStars {
+  color: #4caf50;
+}
+
+.ratingText {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.weightButton {
+  background-color: white;
+  color: #777;
+}
+
+.quantityControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quantityControls .decrement {
+  border: none;
+  padding: 5px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.quantityControls .increment {
+  color: green !important;
+  border: none;
+  padding: 5px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.quantityControls .quantity {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 10px;
+  min-width: 30px;
+  text-align: center;
+}
+
+.addToCartButton {
+  background-color: #8b0000;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.details {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+/* Media Queries */
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .productsGrid_r {
+      grid-template-columns: 1fr; /* 1 card per row */
+  }
+}
+
+/* Tablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .productsGrid_r {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+}
+
+/* Laptops (769px - 1440px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .productsGrid_r {
+      grid-template-columns: repeat(3, 1fr); /* 4 cards per row */
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .productsGrid_g {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+/* Large Screens (1441px - 2560px) */
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .productsGrid_r {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px; /* Extra spacing */
+  }
+}
+
+/* 4K Screens (2561px and above) */
+@media (min-width: 2561px) {
+  .productsGrid_r {
+      grid-template-columns: repeat(5, 1fr); /* 5 cards per row */
+      gap: 40px;
+  }
+  .card_r {
+      padding: 20px; /* Larger padding */
+  }
+}

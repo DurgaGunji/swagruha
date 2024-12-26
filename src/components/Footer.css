@@ -1,0 +1,326 @@
+/* Container for the entire body */
+.body-container_f {
+    background-color: #a10007;
+    position: relative;
+    background-image: url('../assets/flower.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    width: 100%;
+  }
+  
+  /* Top design */
+  .top-design_f {
+    position: absolute;
+    background-image: url('../assets/design.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50px;
+    margin-top: -10px;
+  }
+  
+  /* Image Section */
+  .image-section_f {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  /* Left Content Container */
+  .content-container_f {
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+    position: static;
+    left: 80px;
+  }
+  
+  /* Anniversary Text Styles */
+  .anniversary-text_f {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0;
+    color: #e6a340;
+    text-align: justify;
+    font-family: Georgia, serif;
+  }
+  
+  .year-text_f {
+    font-size: 56px;
+    font-weight: bold;
+    color: #e6a340;
+    font-family: Georgia, serif;
+  }
+  
+  .celebration-text_f {
+    font-size: 38px;
+    font-weight: bold;
+    color: #e6a340;
+    font-family: Georgia, serif;
+  }
+  
+  .superscript_f {
+    font-size: 24px;
+    vertical-align: top;
+  }
+  
+  /* Description Text */
+  .description_f {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+    color: #fff5ee;
+    text-align: justify;
+  }
+  
+  /* Right Image Section */
+  .image-flower_f {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-left: 30px;
+  }
+  
+  .right-image_f {
+    width: auto;
+    height: 100%;
+    position: relative;
+    left: 20%;
+    /* transform: translateX(100px); */
+  }
+  
+  .box-on-flower {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .box-image {
+    width: 300px;
+  }
+  
+  /* Media Queries */
+  
+  /* Mobile Devices (max-width 480px) */
+  @media (max-width: 480px) {
+    .top-design {
+      background-image: none !important;
+    }
+    .body-container_f {
+      background-image: none !important;
+    }
+    .image-flower_f {
+      display: none !important;
+    }
+    .content-container_f {
+      display: block !important;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+  
+  /* Tablets (max-width 768px) */
+  @media (max-width: 768px) {
+    .top-design {
+      background-image: none !important;
+    }
+    .body-container_f {
+      background-image: none !important;
+    }
+    .image-flower_f {
+      display: none !important;
+    }
+    .content-container_f {
+      display: block !important;
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+    }
+  }
+  
+  /* Small Laptops (min-width: 768px and max-width: 1024px) */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .top-design {
+      background-image: none !important;
+    }
+    .body-container_f {
+      background-image: none !important;
+    }
+    .image-flower_f{
+      display:none;
+    }
+    /* .image-flower {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      margin-left: 30px;
+    }
+    
+    .right-image {
+      width: auto;
+      height: 100%;
+      position: relative;
+      right: 0%;
+      /* transform: translateX(100px); */
+    }
+    
+    /* .box-on-flower {
+      position: absolute;
+      top: 50%;
+      left: 70%;
+      transform: translate(-50%, -50%); */
+    
+    .content-container_f {
+      padding: 40px;
+      font-size: 18px;
+    }
+  
+  
+  /* Laptops (min-width: 1024px and max-width: 1366px) */
+  @media (min-width: 1024px) and (max-width: 1366px) {
+   
+    .body-container_f {
+      display: block;
+    }
+    .image-flower_f {
+      /* flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      margin-left: 30px; */
+      display: none;
+    }
+    
+    .right-image_f {
+      width: auto;
+      height: 100%;
+      position: relative;
+      left: 0%;
+      /* transform: translateX(100px); */
+    }
+    
+    .box-on-flower {
+      position: absolute;
+      top: 50%;
+      left: 70%;
+      transform: translate(-50%, -50%);
+    }
+    .content-container_f {
+      padding: 50px;
+      font-size: 20px;
+    }
+  }
+  
+  /* Large Laptops / Desktops (min-width: 1366px and max-width: 1920px) */
+  @media (min-width: 1366px) and (max-width: 1920px) {
+    .top-design {
+      display: block;
+    }
+    .body-container_f {
+      display: block;
+    }
+    .image-flower_f {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      margin-left: 30px;
+    }
+    
+    .right-image_f {
+      width: auto;
+      height: 100%;
+      position: relative;
+      left: 0%;
+      /* transform: translateX(100px); */
+    }
+    
+    .box-on-flower {
+      position: absolute;
+      top: 50%;
+      left: 70%;
+      transform: translate(-50%, -50%);
+    }
+    .content-container_f {
+      padding: 60px;
+      font-size: 22px;
+    }
+  }
+  
+  /* 4K Laptops (min-width: 1920px and max-width: 3840px) */
+  @media (min-width: 1920px) and (max-width: 3840px) {
+    .top-design {
+      display: none;
+    }
+    .image-flower_f {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      margin-left: 10px;
+    }
+    
+    .right-image_f {
+      width: auto;
+      height: 100%;
+      position: relative;
+      left: 0%;
+      /* transform: translateX(100px); */
+    }
+    
+    .box-on-flower {
+      position: absolute;
+      top: 50%;
+      right: 60%;
+      text-align: center;
+      transform: translate(-50%, -50%);
+    }
+    .content-container_f {
+      padding: 80px;
+      font-size: 24px;
+    }
+  }
+  
+  /* Extra Large Screens (min-width: 3840px for 4K and beyond) */
+  @media (min-width: 3840px) {
+    .top-design {
+      background-image: none !important;
+    }
+    .body-container_f {
+      display: block;
+    }
+    .image-flower_f {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      margin-left: 30px;
+    }
+    
+    .right-image_f {
+      width: auto;
+      height: 100%;
+      position: relative;
+      left: 0%;
+      /* transform: translateX(100px); */
+    }
+    
+    .box-on-flower {
+      position: absolute;
+      top: 50%;
+      left: 70%;
+      transform: translate(-50%, -50%);
+    }
+    .content-container_f {
+      padding: 100px;
+      font-size: 26px;
+    }
+  }
+  
